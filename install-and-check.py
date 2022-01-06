@@ -31,6 +31,10 @@ Successfully installed biopython-1.79
 
 # So you have installed biopython on your windows machine. Now have fun!
 
+# install intoyour Windows subsystem for linux
+# ubuntu 20.04
+
+sudo apt-get install python-biopython
 
 # Source 
 # Biopython cookbook: http://biopython.org/DIST/docs/tutorial/Tutorial.html#sec5

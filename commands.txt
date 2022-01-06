@@ -1,0 +1,25 @@
+2.4.1 Simple FASTA parsing example
+
+open the lady slipper orchids FASTA file ls_orchid.fasta
+Link:
+    https://raw.githubusercontent.com/biopython/biopython/master/Doc/examples/ls_orchid.fasta
+
+>>> from Bio import SeqIO
+>>> for seq_record in SeqIO.parse("ls_orchid.fasta", "fasta"):
+...     print(seq_record.id)
+...     print(repr(seq_record.seq))
+...     print(len(seq_record))
+...
+
+
+2.4.2 Simple GenBank parsing example
+load the GenBank file ls_orchid.gbk
+ls_orchid.gbk: 
+    https://raw.githubusercontent.com/biopython/biopython/master/Doc/examples/ls_orchid.gbk
+
+>>> from Bio import SeqIO
+>>> for seq_record in SeqIO.parse("ls_orchid.gbk", "genbank"):
+...     print(seq_record.id)
+...     print(repr(seq_record.seq))
+...     print(len(seq_record))
+...
